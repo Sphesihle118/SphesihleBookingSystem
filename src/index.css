@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+
+@import "tailwindcss";
+
+
+.gotu-regular {
+    font-family: "Gotu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.gotu-bold {
+    font-family: "Gotu", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sekaiwo';
+    src: url('././assets/fonts/sekaiwo/Sekaiwo-Regular.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.Sekaiwo-Regular {
+    font-family: 'Sekaiwo', sans-serif;
+}
+
+
+html{
+    color: #ece5cf;
+}
+
+.fillsection{
+    @apply md:w-xl border-1 p-3 rounded-md text-[#ece5cf] ;
+}
+
+.fillsection2{
+    @apply w-[250px] md:w-[170px] border-1 p-3 rounded-md;
+}
