@@ -11,13 +11,24 @@ const app = express()
 dotenv.config({path: "./config/config.env"});
 
 app.use(cors({
-    origin: true,  // Allow all origins
+    origin: true,
     credentials: true,
 }))
 
 
 app.use(express.json())
 app.use(express.urlencoded({extended: true}));
+
+app.get('/', (req, res) => {
+    res.json({
+        message: "SmokeRise Reservation API is running!",
+        status: "success",
+        endpoints: {
+            createReservation: "POST /api/v1/reservation/send"
+        }
+    });
+});
+
 app.use('/api/v1/reservation', reservationRouter)
 
 
