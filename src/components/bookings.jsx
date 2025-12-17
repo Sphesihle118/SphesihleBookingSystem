@@ -24,7 +24,7 @@ export const Bookings = () => {
 
         try {
             const {data} = await axios.post(
-                "http://localhost:4000/api/v1/reservation/send",
+                "https://sphesihlebookingsystem.onrender.com/",
                 {firstName, lastName, phone, email, guests, date, time},
                 {
                     headers:{
